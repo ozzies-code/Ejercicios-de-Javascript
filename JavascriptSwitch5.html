@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+body {background-color: lightblue;}
+
+h1   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 24px; 
+    text-align: center; 
+    font-style: bold;
+}
+
+h2   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 20px; 
+    text-align: center; 
+    font-style: bold;
+}
+
+h3   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 18px; 
+    text-align: center; 
+    font-style: bold;
+}
+
+p    {color: red;}
+
+</style>
+
+<h1>JavaScript switch Control</h1>
+<h3>strict comparison (===).</h3>
+<p>In this example there is no match for x:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = "0";
+
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
+}
+document.getElementById("demo").innerHTML = "<strong style='color: blue; font-style: bold; font-family: Arial;'>" + text + "</strong>";
+</script>
+
+</body>
+</html>
