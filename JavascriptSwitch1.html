@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+body {background-color: lightblue;}
+
+h1   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 24px; 
+    text-align: center; 
+    font-style: bold;
+}
+
+h2   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 20px; 
+    text-align: center; 
+    font-style: bold;
+}
+
+p    {color: red;}
+
+</style>
+
+<h1>JavaScript Control Flow</h1>
+<h2>The switch Statement</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+let date = new Date().getDay();
+ 
+switch (date) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+
+document.getElementById("demo").innerHTML = "<strong style='color: blue; font-style: bold; font-family: Arial;'>" + "Today is " + day + "</strong>";
+</script>
+
+</body>
+</html>
