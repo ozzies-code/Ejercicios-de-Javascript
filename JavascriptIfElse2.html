@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+body {background-color: lightblue;}
+
+h2   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 24px; 
+    text-align: center; 
+    font-style: italic;
+}
+
+p    {color: red;}
+
+</style>
+
+<h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+
+if (time < 10) 
+  greeting = "Good morning";
+ else if (time < 20) 
+  greeting = "Good day";
+ else 
+  greeting = "Good evening";
+
+document.getElementById("demo").innerHTML = "<strong style='color: blue; font-style: italic; font-family: verdana;'>" + greeting + "</strong>";
+</script>
+
+</body>
+</html>
