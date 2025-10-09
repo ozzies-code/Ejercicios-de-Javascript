@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+body {background-color: lightblue;}
+
+h1   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 24px; 
+    text-align: center; 
+    font-style: italic;
+}
+
+p    {color: red;}
+
+</style>
+
+<h1>JavaScript Ternary Operator</h1>
+<p id="demo"></p>
+
+<script>
+// Using the ternary operator
+let price = 10;
+let isMember = true;
+let discount = isMember ? 0.2 : 0;
+let total = 10 - (price * discount)
+
+document.getElementById("demo").innerHTML = "<strong style='color: blue; font-style: italic; font-family: verdana;'>" + "The price is " + total + "</strong>";
+</script>
+</body>
+</html>
