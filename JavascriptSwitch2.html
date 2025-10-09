@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+body {background-color: lightblue;}
+
+h1   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 24px; 
+    text-align: center; 
+    font-style: bold;
+}
+
+h2   {
+    color: #000000; 
+    font-family: verdana; 
+    font-size: 20px; 
+    text-align: center; 
+    font-style: bold;
+}
+
+p    {color: red;}
+
+</style>
+
+<h1>JavaScript switch Controls</h1>
+<h2>The default Keyword</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = "<strong style='color: blue; font-style: bold; font-family: Arial;'>" + text + "</strong>";
+</script>
+
+</body>
+</html>
